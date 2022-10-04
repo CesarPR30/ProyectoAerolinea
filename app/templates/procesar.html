@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<style>
+	.header_a{
+		background:#15344d;
+	}
+	.menu{
+		list-style: none;
+	}
+	.menu li{
+		display: inline-block;
+	}
+	.menu li a{
+		display: block;
+		padding: 10px 20px;
+		background: #DDDCDC;
+		text-decoration: none;
+		color:#000000;
+	}
+	.menu li a:hover{
+		background: #1b486d;
+		color:#fff;
+	}
+</style>
+</head>
+
+<body>
+<div class="container">
+	
+	<div class="row">
+		<div class="col-12 col-xl-12">
+			<ul class="menu">
+                <li><a href=/login><span class="icon-aircraft"></span> LOGIN</a></li>
+				<li><a href=/vuelos><span class="icon-aircraft"></span> VUELOS</a></li>
+				<li><a href=/vuelos/procesar><span class="icon-aircraft"></span> AÑADIR VUELO</a></li>
+                <li><a href=/hoteles><span class="icon-aircraft"></span> HOTEL</a></li>
+				<li><a href=/mi_cuenta><span class="icon-aircraft"></span> PERFIL</a></li>
+			</ul>
+		</div>
+    	<div class="row">
+            <div class="col-12 col-xl-12">
+              <form action="procesar.html" method="post" enctype="multipart/form-data" class="row g-3">
+    <div class="col-auto">
+      <input name="origen" type="text" class="form-control" id="origen" placeholder="Origen">
+    </div>
+    <div class="col-auto">
+      <input name="destino" type="text" class="form-control" id="destino" placeholder="Destino">
+    </div>
+    <div class="col-auto">
+      <input name="partida" type="date" class="form-control" id="partida" value="2022-05-15">
+    </div>
+    <div class="col-auto">
+      <input name="regreso" type="date" class="form-control" id="regreso" value="2022-05-15">
+    </div>
+     <div class="col-auto">
+      <select name="pasajeros" class="form-select" id="pasajeros">
+        <option value="1">1 pasajero</option>
+        <option value="2">2 pasajeros</option>
+        <option value="3">3 pasajeros</option>
+        <option value="4">4 pasajeros</option>
+        <option value="5">5 pasajeros</option>
+      </select>
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">BUSCAR</button>
+      </div>
+    </form>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+
